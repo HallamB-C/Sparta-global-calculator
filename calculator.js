@@ -29,6 +29,23 @@ do{
         finished = true;
         break;
     }
+  }else if (calculator_type == "advanced") {
+    // get the user inputs
+    var value1 = prompt("Enter first value");
+    var value2 = prompt("Enter the second value");
+    var choice = prompt("Choose your action (p)ower (s)quare root") || "a";
+
+    switch(choice){
+      case "p":
+        alert(value1 ^ value2);
+        finished = true;
+        break;
+      case "s":
+        alert("Value1's square root is " + Math.sqrt(value1));
+        alert("Value2's square root is " + Math.sqrt(value2));
+        finished = true;
+        break;
   }
+}
 
 }while(!finished);
