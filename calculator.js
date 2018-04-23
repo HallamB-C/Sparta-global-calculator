@@ -1,6 +1,6 @@
 var finished = false;
 do{
-  var calculator_type = prompt("Enter 'basic' or 'advanced' ");
+  var calculator_type = prompt("Enter 'basic' , 'advanced' or 'BMI' ");
   if(calculator_type == "basic"){
     // get the user inputs
     var value1 = prompt("Enter first value");
@@ -46,6 +46,12 @@ do{
         finished = true;
         break;
   }
+}else if(calculator_type == "BMI"){
+  // get the user inputs
+  var value1 = prompt("Enter your weight in Kilograms");
+  var value2 = prompt("Enter your height in meters");
+  var BMI = Math.round(((value1 / value2) / value2)*10) / 10;
+  alert("Your BMI is " + BMI);
 }
 
 }while(!finished);
