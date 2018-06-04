@@ -6,7 +6,9 @@ do{
     var value1 = prompt("Enter first value");
     var value2 = prompt("Enter the second value");
     var choice = prompt("Choose your action (a)dd (s)ubtract (m)ultiply (d)ivide (mo)dulus") || "a";
-
+    value1 = parseInt(value1);
+    value2 = parseInt(value2);
+    
     switch(choice){
       case "a":
         alert(value1 + value2);
