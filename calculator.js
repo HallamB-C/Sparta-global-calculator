@@ -11,23 +11,23 @@ do{
     
     switch(choice){
       case "a":
-        alert(value1 + value2);
+        alert("The result is " + value1 + value2);
         finished = true;
         break;
       case "s":
-        alert(value1 - value2);
+        alert("The result is " + value1 - value2);
         finished = true;
         break;
       case "m":
-        alert(value1 * value2);
+        alert("The result is " + value1 * value2);
         finished = true;
         break;
       case "d":
-        alert(value1 / value2);
+        alert("The result is " + value1 / value2);
         finished = true;
         break;
       case "mo":
-        alert(value1 % value2);
+        alert("The result is " + value1 % value2);
         finished = true;
         break;
     }
@@ -36,10 +36,12 @@ do{
     var value1 = prompt("Enter first value");
     var value2 = prompt("Enter the second value");
     var choice = prompt("Choose your action (p)ower (s)quare root") || "a";
+    value1 = parseInt(value1);
+    value2 = parseInt(value2);
 
     switch(choice){
       case "p":
-        alert(value1 ^ value2);
+        alert("The result is " + value1 ^ value2);
         finished = true;
         break;
       case "s":
